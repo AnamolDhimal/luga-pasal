@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Homepage Load",
+    "status": "PASS"
+  },
+  {
+    "name": "Search Functionality",
+    "status": "PASS"
+  },
+  {
+    "name": "buyer Login",
+    "status": "PASS"
+  },
+  {
+    "name": "brand Login",
+    "status": "PASS"
+  },
+  {
+    "name": "admin Login",
+    "status": "PASS"
+  },
+  {
+    "name": "Responsiveness Mobile",
+    "status": "PASS"
+  },
+  {
+    "name": "Responsiveness Tablet",
+    "status": "PASS"
+  },
+  {
+    "name": "Responsiveness Desktop",
+    "status": "PASS"
+  }
+][
+  {
+    "name": "Add to Cart",
+    "status": "PASS"
+  },
+  {
+    "name": "Checkout Page Load",
+    "status": "PASS"
+  },
+  {
+    "name": "Payment Submission",
+    "status": "PASS"
+  }
+],
+[
+  {
+    "name": "Add Product",
+    "status": "FAIL",
+    "error": "page.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[name=\"product_name\"]')\u001b[22m\n"
+  },
+  {
+    "name": "Verify Product on Storefront",
+    "status": "FAIL",
+    "error": "Added product not found on storefront"
+  }
+],
+[
+  {
+    "name": "Add Product",
+    "status": "PASS"
+  },
+  {
+    "name": "Verify Product on Storefront",
+    "status": "FAIL",
+    "error": "Added product not found on storefront"
+  }
+],

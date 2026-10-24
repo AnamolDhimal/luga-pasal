@@ -1,39 +1,50 @@
 <?php
 session_start();
-require_once 'config/db.php';
+$config_path = __DIR__ . '/../config/db.php';
+if (!file_exists($config_path)) {
+    die("Configuration file not found at $config_path");
+}
+require_once $config_path;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['user_id'])) {
     $userId = $_SESSION['user_id'];
-    $title = $_POST['title'];
-    $categoryId = $_POST['category_id'];
-    $price = $_POST['price'];
-    $size = $_POST['size'];
-    $condition = $_POST['condition_status'];
-    $stock = $_POST['stock'];
-    $description = $_POST['description'];
+    $title = trim($_POST['title'] ?? '');
+    $categoryId = (int)($_POST['category_id'] ?? 0);
+    $price = (float)($_POST['price'] ?? 0);
+    $size = $_POST['size'] ?? '';
+    $condition = $_POST['condition_status'] ?? '';
+    $stock = (int)($_POST['stock'] ?? 0);
+    $description = trim($_POST['description'] ?? '');
 
-    // Handle Image Upload
-    $targetDir = "assets/img/products/";
+    if (empty($title) || $price <= 0 || empty($size) || $stock < 0) {
+        header('Location: ../dashboard.php?error=Invalid price or stock provided');
+        exit;
+    }
+
+    $targetDir = __DIR__ . '/../assets/img/products/';
     if (!file_exists($targetDir)) {
         mkdir($targetDir, 0777, true);
     }
 
-    $fileName = time() . '_' . basename($_FILES["image"]["name"]);
+    $fileName = time() . '_' . basename($_FILES["image"]["name"] ?? 'default.jpg');
     $targetFilePath = $targetDir . $fileName;
 
-    if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFilePath)) {
+    if (isset($_FILES["image"]) && move_uploaded_file($_FILES["image"]["tmp_name"], $targetFilePath)) {
         try {
             $stmt = $pdo->prepare("INSERT INTO products (vendor_id, category_id, title, description, price, size, condition_status, stock, image_path) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
             $stmt->execute([$userId, $categoryId, $title, $description, $price, $size, $condition, $stock, $targetFilePath]);
-            header('Location: dashboard.php?success=1');
+            header('Location: ../dashboard.php?success=Product added successfully!');
             exit;
         } catch (Exception $e) {
-            die("Database error: " . $e->getMessage());
+            header('Location: ../dashboard.php?error=Database error: ' . $e->getMessage());
+            exit;
         }
     } else {
-        die("Image upload failed.");
+        header('Location: ../dashboard.php?error=Image upload failed');
+        exit;
     }
 } else {
-    die("Unauthorized access.");
+    header('Location: ../login.php');
+    exit;
 }
 ?>

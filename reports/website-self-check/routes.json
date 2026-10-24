@@ -1,0 +1,634 @@
+[
+  {
+    "url": "http://localhost/luga-pasal/",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/dashboard.php",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      }
+    ],
+    "buttons": [
+      ""
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/#",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/#",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/login.php",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/login.php",
+        "method": "post",
+        "inputs": [
+          "email",
+          "password"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/login.php",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Login",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/register.php",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/register.php",
+        "method": "post",
+        "inputs": [
+          "name",
+          "email",
+          "phone",
+          "password",
+          "role",
+          "terms"
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Sign up"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/index.php",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/checkout.php",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/checkout.php",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/index.php?category=menswear",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/index.php?category=menswear",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/index.php?category=womenswear",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/index.php?category=womenswear",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/index.php?category=cultural",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/index.php?category=cultural",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/index.php?sort=sale",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/index.php?sort=sale",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/#products",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/#products",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/dashboard.php#",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      }
+    ],
+    "buttons": [
+      ""
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/login.php#",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/login.php",
+        "method": "post",
+        "inputs": [
+          "email",
+          "password"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/login.php#",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Login",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/register.php#",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/register.php",
+        "method": "post",
+        "inputs": [
+          "name",
+          "email",
+          "phone",
+          "password",
+          "role",
+          "terms"
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Sign up"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/index.php#",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/index.php#",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/index.php#products",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/index.php#products",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/checkout.php#",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/checkout.php#",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/index.php?category=menswear#",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/index.php?category=menswear#",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/index.php?category=menswear#products",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/index.php?category=menswear#products",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/index.php?category=womenswear#",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/index.php?category=womenswear#",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/index.php?category=womenswear#products",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/index.php?category=womenswear#products",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/index.php?category=cultural#",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/index.php?category=cultural#",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/index.php?category=cultural#products",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/index.php?category=cultural#products",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/index.php?sort=sale#",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/index.php?sort=sale#",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  },
+  {
+    "url": "http://localhost/luga-pasal/index.php?sort=sale#products",
+    "forms": [
+      {
+        "action": "http://localhost/luga-pasal/index.php",
+        "method": "get",
+        "inputs": [
+          "search"
+        ]
+      },
+      {
+        "action": "http://localhost/luga-pasal/index.php?sort=sale#products",
+        "method": "get",
+        "inputs": [
+          ""
+        ]
+      }
+    ],
+    "buttons": [
+      "",
+      "Apply Filters",
+      "Add to Cart",
+      "Join"
+    ]
+  }
+]

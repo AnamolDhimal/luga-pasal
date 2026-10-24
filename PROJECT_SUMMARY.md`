@@ -1,0 +1,68 @@
+# Luga Pasal - Project Summary & Documentation
+
+## 📌 Project Overview
+Luga Pasal is a multi-vendor street-style apparel marketplace. It allows brands and casual sellers to list their clothing and buyers to shop using a high-contrast, modern UI.
+
+## 🛠️ Tech Stack
+- **Backend**: Native PHP (Proced la/OOP)
+- **Database**: MySQL (Relational)
+- **Frontend**: HTML5, Tailwind CSS (via CDN), JavaScript (Dynamic DOM)
+- **Environment**: XAMPP (Apache & MySQL)
+
+## 📂 File Structure
+### Root Directory
+- `index.php`: Main storefront, product grid, and AJAX filtering.
+- `login.php`: User authentication.
+- `register.php`: Modern sign-up form with live password validation.
+- `dashboard.php`: Unified role-based dashboard (Admin/Vendor).
+- `checkout.php`: Cart summary and payment method selection.
+- `receipt.php`: Order confirmation and printable invoice.
+- `database.sql`: Full database schema for import.
+
+### `/config`
+- `db.php`: PDO Database connection and global constants.
+- `languages.php`: Translation arrays for English (en) and Nepali (np).
+
+### `/includes`
+- `header.php`: Global navigation, brand-logo, and session management.
+- `footer.php`: Site footer and brand links.
+
+### `/actions`
+- `add_to_cart.php`: Session-based cart management.
+- `add_product.php`: Image upload and product insertion logic.
+- `delete_product.php`: Product removal logic.
+- `process_payment.php`: Order creation and stock decrement.
+- `filter_products.php`: AJAX handler for product filtering.
+- `logout.php`: Session destruction.
+
+### `/assets`
+- `css/style.css`: Custom brand styles.
+- `js/filter.js`: Frontend logic for async filtering.
+- `img/products/`: Storage for uploaded product images.
+
+### `/logo`
+- `luga-pasal-logo.svg`: Main brand wordmark.
+- `luga-pasal-icon.svg`: Brand icon for favicon and tiles.
+
+## 🗄️ Database Schema
+- `users`: `user_id`, `name`, `email`, `password`, `role` (admin, brand, casual_seller, buyer).
+- `categories`: `category_id`, `category_name`.
+- `products`: `product_id`, `vendor_id`, `category_id`, `title`, `description`, `price`, `size`, `condition_status`, `stock`, `image_path`.
+- `orders`: `order_id`, `buyer_id`, `total_amount`, `payment_method`, `payment_status`, `shipping_address`.
+- `order_items`: `item_id`, `order_id`, `product_id`, `quantity`, `unit_price`.
+
+## 🎨 Brand Identity
+- **Colors**:
+  - Matte Black: `#0A0A0A` (Primary)
+  - Brand Lime: `#CCFF00` (Accent/Buttons)
+  - Brand Orange: `#FF5A0A` (Utility/Highlights)
+  - Background: `#FAFAFA` (Off-white)
+- **Typography**: Roboto (Sans-serif)
+
+## 🚀 Setup Guide for XAMPP
+1. Copy the project folder to `C:\xampp\htdocs\luga-pasal\`.
+2. Start **Apache** and **MySQL** in XAMPP Control Panel.
+3. Open `http://localhost/phpmyadmin`.
+4. Create a database named `luga_pasal`.
+5. Import the `database.sql` file.
+6. Access the site at `http://localhost/luga-pasal/index.php`.

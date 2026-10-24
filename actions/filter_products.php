@@ -1,5 +1,5 @@
 <?php
-require_once 'config/db.php';
+require_once '../config/db.php';
 
 $category = $_GET['category'] ?? '';
 $size = $_GET['size'] ?? '';
@@ -52,18 +52,18 @@ foreach($products as $p) {
         <div class="relative h-56 bg-gray-100 overflow-hidden">
             <img src="'.$imgPath.'" alt="'.$p['title'].'" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
             <div class="absolute top-2 left-2 flex flex-col gap-1">
-                <span class="bg-blue-600 text-white text-[10px] font-bold px-2 py-1 rounded uppercase">'.$p['condition_status'].'</span>
-                <span class="bg-gray-800 text-white text-[10px] font-bold px-2 py-1 rounded uppercase">'.$p['size'].'</span>
+                <span class="bg-brandLime text-black text-[10px] font-bold px-2 py-1 rounded uppercase border border-black">'.$p['condition_status'].'</span>
+                <span class="bg-matteBlack text-white text-[10px] font-bold px-2 py-1 rounded uppercase">'.$p['size'].'</span>
             </div>
         </div>
         <div class="p-4 space-y-2">
             <p class="text-xs text-gray-400 font-medium truncate">'.$p['vendor_name'].'</p>
             <h3 class="text-sm font-semibold text-gray-800 truncate">'.$p['title'].'</h3>
             <div class="flex items-center justify-between">
-                <span class="text-blue-600 font-bold text-lg">Rs. '.number_format($p['price'], 2).'</span>
+                <span class="text-matteBlack font-bold text-lg">Rs. '.number_format($p['price'], 2).'</span>
                 <span class="text-xs text-gray-500">'.$p['stock'].' in stock</span>
             </div>
-            <button class="w-full py-2 bg-blue-600 text-white rounded-md text-xs font-bold hover:bg-blue-700 transition shadow-sm">Add to Cart</button>
+            <button class="w-full py-2 bg-brandLime text-black rounded-md text-xs font-bold hover:bg-lime-400 transition shadow-sm border border-black">Add to Cart</button>
         </div>
     </div>';
 }

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'config/db.php';
+require_once '../config/db.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['user_id'])) {
     $buyerId = $_SESSION['user_id'];
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['user_id'])) {
         unset($_SESSION['cart']);
 
         // Generate Receipt (simplified as a redirect with order ID)
-        header("Location: receipt.php?order_id=$orderId");
+        header("Location: ../receipt.php?order_id=$orderId");
         exit;
 
     } catch (Exception $e) {

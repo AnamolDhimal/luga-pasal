@@ -89,9 +89,9 @@ $userId = $_SESSION['user_id'];
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
             <!-- Sidebar Actions -->
             <div class="lg:col-span-1 space-y-6">
-                <div class="bg-white p-6 rounded-xl shadow-sm border space-y-4">
-                    <h3 class="font-bold text-gray-800">Inventory Management</h3>
-                    <button onclick="document.getElementById('product-modal').classList.remove('hidden')" class="w-full bg-blue-600 text-white py-2 rounded-lg font-bold hover:bg-blue-700 transition text-sm">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 space-y-4">
+                    <h3 class="font-bold text-matteBlack">Inventory Management</h3>
+                    <button onclick="document.getElementById('product-modal').classList.remove('hidden')" class="w-full bg-brandLime text-black py-3 rounded-lg font-bold hover:bg-lime-400 transition text-sm border border-black shadow-sm">
                         + Add New Clothing
                     </button>
                 </div>
